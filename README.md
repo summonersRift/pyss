@@ -1,47 +1,52 @@
-#PYSS high performance scheduling simulator
-#### 1. Running pyss with a trace file:
-    * cd ~/hpc/pyss/src/
+# PYSS: scheduling simulator for high performance computing
 
-#### 2. Run with a workload file downloaded from Parallel WOrkloads archive
-    * ./go.sh 4608 input_file FcfsScheduler
-    * ./go.sh 
-       * arg1: num-processors (100 if left blank)
-       * arg2: input-file
-       * arg3: scheduler
+### Run with a workload file downloaded from Parallel WOrkloads archive
+   cd ~/hpc/pyss/src/
+   ./go.sh 4608 input_file FcfsScheduler
+   ./go.sh 
+   * arg1: num-processors (100 if left blank)
+   * arg2: input-file
+   * arg3: scheduler
 
+You can run the run_simulator.py if you would like.  
 Just run the simulator with --help to see the list of supported schedulers usage.
 
 
 ## python run_simulator.py --help
 
-Psyco not available, will run slower (http://psyco.sourceforge.net)
-Usage: run_simulator.py [options]
+Psyco not available, will run slower (http://psyco.sourceforge.net)  
+Usage: run_simulator.py [options]  
 
-Options:
-  -h, --help            show this help message and exit
-  --num-processors=NUM_PROCESSORS
-                        the number of available processors in the simulated
-                        parallel machine
-  --input-file=INPUT_FILE
-                        a file in the standard workload format: http://www.cs.
-                        huji.ac.il/labs/parallel/workload/swf.html, if '-'
-                        read from stdin
-  --scheduler=SCHEDULER
-                        1) FcfsScheduler, 2) ConservativeScheduler, 3)
-                        DoubleConservativeScheduler, 4) EasyBackfillScheduler,
-                        5) DoubleEasyBackfillScheduler, 6)
-                        GreedyEasyBackfillScheduler, 7) EasyPlusPlusScheduler,
-                        8) ShrinkingEasyScheduler, 9)
-                        LookAheadEasyBackFillScheduler,  10)
-                        EasySJBFScheduler, 11) HeadDoubleEasyScheduler, 12)
-                        TailDoubleEasyScheduler, 13)
-                        OrigProbabilisticEasyScheduler, 14)
-                        ReverseEasyScheduler,  15)
-                        PerfectEasyBackfillScheduler,
-                        16)DoublePerfectEasyBackfillScheduler, 17)
-                        ProbabilisticNodesEasyScheduler, 18)
-                        AlphaEasyScheduler, 19)DoubleAlphaEasyScheduler
-                        20)ProbabilisticAlphaEasyScheduler
+Options:  
+  -h, --help            show this help message and exit  
+  --num-processors=NUM_PROCESSORS  
+                        the number of available processors in the simulated  
+                        parallel machine  
+  --input-file=INPUT_FILE  
+                        a file in the standard workload format: http://www.cs.  
+                        huji.ac.il/labs/parallel/workload/swf.html, if '-'  
+                        read from stdin  
+  --scheduler=SCHEDULER(OneOfTheFollowingSchedulers)  
+1. FcfsScheduler,
+2. ConservativeScheduler,
+3. DoubleConservativeScheduler,
+4. EasyBackfillScheduler,
+5. DoubleEasyBackfillScheduler,
+6. GreedyEasyBackfillScheduler,
+7. EasyPlusPlusScheduler,
+8. ShrinkingEasyScheduler, 
+9. LookAheadEasyBackFillScheduler,
+10. EasySJBFScheduler,
+11. HeadDoubleEasyScheduler,
+12. TailDoubleEasyScheduler,
+13. OrigProbabilisticEasyScheduler,
+14. ReverseEasyScheduler,
+15. PerfectEasyBackfillScheduler,
+16. DoublePerfectEasyBackfillScheduler,
+17. ProbabilisticNodesEasyScheduler,
+18. AlphaEasyScheduler,
+19. DoubleAlphaEasyScheduler
+20. ProbabilisticAlphaEasyScheduler
 
 
 
@@ -50,25 +55,25 @@ Options:
 ### Required Softwares:
    * Python 2.4
 
-##### Download Python 2.4 from:
+#### Download Python 2.4 from:
 https://www.python.org/ftp/python/2.4/Python-2.4.tar.bz2
 in your ~/installation directory
 
-##### There is a bug that might result in error 134 when u make after configure.
-TO avoid that u might need a BASECFLAGS
+#### There is a bug that might result in error 134 when u make after configure.
+To avoid that u might need a BASECFLAGS
 
  ./configure BASECFLAGS=-U_FORTIFY_SOURCE --prefix=/home/obaida/installation/Python2.4/
 
-##### Then just
+#### Then just
   * make 
   * make install
 
-##### Check to see if it is installed properly
+#### Check to see if it is installed properly
   * cd /home/obaida/installation/Python-2.4/bin
   * ./python2.4
   
 
-##### Add this to your PATH
+#### Add this to your PATH
   * vim ~/.bashrc
   * export PATH=$PATH:/home/obaida/installation/Python2.4/bin
   * source ~/.bashrc
