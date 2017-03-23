@@ -26,26 +26,26 @@ Options:
 3. --input-file=INPUT_FILE
   * file in the standard workload format: http://www.cs.huji.ac.il/labs/parallel/workload/swf.html, if '-' read from stdin
 4. --scheduler=SCHEDULER(OneOfTheFollowingSchedulers)
-  1. FcfsScheduler,
-  2. ConservativeScheduler,
-  3. DoubleConservativeScheduler,
-  4. EasyBackfillScheduler,
-  5. DoubleEasyBackfillScheduler,
-  6. GreedyEasyBackfillScheduler,
-  7. EasyPlusPlusScheduler,
-  8. ShrinkingEasyScheduler, 
-  9. LookAheadEasyBackFillScheduler,
-  10. EasySJBFScheduler,
-  11. HeadDoubleEasyScheduler,
-  12. TailDoubleEasyScheduler,
-  13. OrigProbabilisticEasyScheduler,
-  14. ReverseEasyScheduler,
-  15. PerfectEasyBackfillScheduler,
-  16. DoublePerfectEasyBackfillScheduler,
-  17. ProbabilisticNodesEasyScheduler,
-  18. AlphaEasyScheduler,
-  19. DoubleAlphaEasyScheduler
-  20. ProbabilisticAlphaEasyScheduler
+   1. FcfsScheduler,
+   2. ConservativeScheduler,
+   3. DoubleConservativeScheduler,
+   4. EasyBackfillScheduler,
+   5. DoubleEasyBackfillScheduler,
+   6. GreedyEasyBackfillScheduler,
+   7. EasyPlusPlusScheduler,
+   8. ShrinkingEasyScheduler, 
+   9. LookAheadEasyBackFillScheduler,
+   10. EasySJBFScheduler,
+   11. HeadDoubleEasyScheduler,
+   12. TailDoubleEasyScheduler,
+   13. OrigProbabilisticEasyScheduler,
+   14. ReverseEasyScheduler,
+   15. PerfectEasyBackfillScheduler,
+   16. DoublePerfectEasyBackfillScheduler,
+   17. ProbabilisticNodesEasyScheduler,
+   18. AlphaEasyScheduler,
+   19. DoubleAlphaEasyScheduler
+   20. ProbabilisticAlphaEasyScheduler
 
 
 
