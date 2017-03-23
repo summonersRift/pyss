@@ -19,15 +19,12 @@ Just run the simulator with --help to see the list of supported schedulers usage
 Psyco not available, will run slower (http://psyco.sourceforge.net)  
    * Usage: run_simulator.py [options]  
 
-Options:  
-1. -h, --help            show this help message and exit  
-2. --num-processors=NUM_PROCESSORS  
-                        the number of available processors in the simulated  
-                        parallel machine  
-3. --input-file=INPUT_FILE  
-                        a file in the standard workload format: http://www.cs.  
-                        huji.ac.il/labs/parallel/workload/swf.html, if '-'  
-                        read from stdin  
+Options:
+1. -h, --help show this help message and exit
+2. --num-processors=NUM_PROCESSORS
+..* the number of available processors in the simulated parallel machine
+3. --input-file=INPUT_FILE
+..* file in the standard workload format: http://www.cs.huji.ac.il/labs/parallel/workload/swf.html, if '-' read from stdin
 4. --scheduler=SCHEDULER(OneOfTheFollowingSchedulers)
 ..1. FcfsScheduler,
 ..2. ConservativeScheduler,
