@@ -28,7 +28,7 @@ Options:
                         a file in the standard workload format: http://www.cs.  
                         huji.ac.il/labs/parallel/workload/swf.html, if '-'  
                         read from stdin  
-4. --scheduler=SCHEDULER(OneOfTheFollowingSchedulers)  
+4. --scheduler=SCHEDULER(OneOfTheFollowingSchedulers)
 ..1. FcfsScheduler,
 ..2. ConservativeScheduler,
 ..3. DoubleConservativeScheduler,
